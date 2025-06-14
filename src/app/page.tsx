@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         Your personal finance assistant
       </p>
       <Link href={"/about"}>Go to About Page</Link>
+      <Button variant={"default"}>Shadcn Button</Button>
     </main>
   );
 }
