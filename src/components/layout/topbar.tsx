@@ -1,19 +1,15 @@
-import {
-  Plus,
-  Search,
-  SeparatorVertical,
-  SeparatorVerticalIcon,
-} from "lucide-react";
+import { Search } from "lucide-react";
 import { Button } from "../ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Input } from "../ui/input";
+import Link from "next/link";
 
 export default function TopBar() {
   return (
     <div className="h-14 px-6 flex flex-row items-center justify-between border gap-0.5">
       <div className="gap-0.5">
-        <Button size={"sm"} variant={"ghost"} className="text-lg">
-          MitWallet
+        <Button size={"sm"} variant={"ghost"} className="text-lg" asChild>
+          <Link href={"/"}>MitWallet</Link>
         </Button>
         <Button size={"sm"} variant={"ghost"}>
           Docs
@@ -31,6 +27,7 @@ export default function TopBar() {
           Category
         </Button>
       </div>
+
       <div className="flex items-center gap-2">
         <Search className="" />
         <Input placeholder="search"></Input>
