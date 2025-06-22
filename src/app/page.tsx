@@ -8,6 +8,8 @@ export default function Home() {
         Your personal finance assistant
       </p>
       <Link href={"/about"}>Go to About Page</Link>
+      <Link href="./dashboard">Dashboard</Link>
+      <div className="size-10 bg-red-500"></div>
     </main>
   );
 }
